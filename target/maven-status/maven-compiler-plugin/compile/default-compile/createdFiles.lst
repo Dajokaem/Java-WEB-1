@@ -1,0 +1,12 @@
+Logica\Usuario.class
+www\dajokaem\com\primer_servlet\resources\JavaEE8Resource.class
+Persistencia\exceptions\IllegalOrphanException.class
+Persistencia\exceptions\NonexistentEntityException.class
+www\dajokaem\com\servlets\SV_usuario.class
+www\dajokaem\com\primer_servlet\JAXRSConfiguration.class
+Logica\Usuario_.class
+Persistencia\exceptions\PreexistingEntityException.class
+Logica\CTUsuario.class
+www\dajokaem\com\servlets\SV_Eliminar.class
+Persistencia\Control.class
+Persistencia\UsuarioJpaController.class
