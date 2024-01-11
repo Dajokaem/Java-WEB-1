@@ -10,3 +10,4 @@ Logica\CTUsuario.class
 www\dajokaem\com\servlets\SV_Eliminar.class
 Persistencia\Control.class
 Persistencia\UsuarioJpaController.class
+www\dajokaem\com\servlets\SV_Editar.class

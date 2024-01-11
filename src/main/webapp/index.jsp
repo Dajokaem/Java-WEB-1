@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : 8/01/2024, 20:16:09
-    Author     : jos56
+    Author     : dajokaem/Jose Armando Lopez Cruz
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

@@ -21,26 +21,32 @@ import javax.servlet.http.HttpSession;
  */
 @WebServlet(name = "SV_Editar", urlPatterns = {"/SV_Editar"})
 public class SV_Editar extends HttpServlet {
-Control ct = new Control();
 
- 
+    Control ct = new Control();
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         int ide = Integer.parseInt(request.getParameter("idEdi"));
         Usuario usu = ct.traeruno(ide);
         HttpSession misesion = request.getSession();
-        misesion.setAttribute("usuEditar",usu);
-        response.sendRedirect("editar.jsp");  
+        misesion.setAttribute("usuEditar", usu);
+        response.sendRedirect("editar.jsp");
     }
-
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        String dpi = request.getParameter("dpi"), nm = request.getParameter("nombre"), ape = request.getParameter("apellido"), tel = request.getParameter("telefono");
+        Usuario usu = (Usuario) request.getSession().getAttribute("usuEditar");
+        usu.setDPI(dpi);
+        usu.setApe(ape);
+        usu.setNm(nm);
+        usu.setTel(tel);
+        ct.editar(usu);
+        response.sendRedirect("index.jsp");
     }
-    
+
     @Override
     public String getServletInfo() {
         return "Short description";

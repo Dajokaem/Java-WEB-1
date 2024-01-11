@@ -28,4 +28,12 @@ public class Control {
     public Usuario traeruno(int a){
         return usu.findUsuario(a);
     }
+    public void editar(Usuario b){
+        try {
+            usu.edit(b);
+        } catch (Exception ex) {
+            Logger.getLogger(Control.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
 }

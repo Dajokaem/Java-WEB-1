@@ -55,10 +55,6 @@ public class SV_usuario extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String dpi = request.getParameter("dpi"), nm = request.getParameter("nombre"), ape = request.getParameter("apellido"), tel = request.getParameter("telefono");
-        System.out.println("DNI: " + dpi);
-        System.out.println("Nombre: " + nm);
-        System.out.println("Apellido: " + ape);
-        System.out.println("telefono: " + tel);
         Usuario usu = new Usuario();
         usu.setDPI(dpi);
         usu.setApe(ape);
